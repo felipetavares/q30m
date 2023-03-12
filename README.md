@@ -11,7 +11,7 @@ This experiment is quite simple. We first initialize a system of two qubits to
 an *entangled* state. That means we cannot describe this state from the
 individual states of qubits:
 
-$$S = \frac{\lvert 00 \rangle}{\sqrt{2}} + \frac{\lvert 11 \rangle}}{\sqrt{2}}$$
+$$S = \frac{\lvert 00 \rangle}{\sqrt{2}} + \frac{\lvert 11 \rangle}{\sqrt{2}}$$
 
 Then, we measure each qubit individually. Since this state is a superposition
 of either both qubits being 0 or both being 1, whenever one of them is
@@ -36,9 +36,9 @@ $$b_{1} \otimes b_{2} \otimes \ldots \otimes b_{n}$$
 (2) The probability of a qubit being in a state, for example the first qubit in
 a two qubit state being $\lvert 0 \rangle$ can be calculated by:
 
-$$|\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S|^2$$
+$$|| \lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S ||^2$$
 
-Where $I_2$ is a $2x2$ identity tensor.
+Where $I_2$ is a $2 \times 2$ identity tensor.
 
 The projector in this case is the result of the ket-bra multiplication. The
 idea here is to build a n-gate operation out of the Kronecker product of
@@ -46,7 +46,7 @@ identity tensors and the projector for the qubit we are interested in.
 
 The state after the measurement can be described similarly:
 
-$$\frac{\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S}{|\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S|}$$
+$$\frac{\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S}{||\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S||}$$
 
 # Outcomes
 
