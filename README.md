@@ -36,7 +36,7 @@ $$b_{1} \otimes b_{2} \otimes \ldots \otimes b_{n}$$
 (2) The probability of a qubit being in a state, for example the first qubit in
 a two qubit state being $\lvert 0 \rangle$ can be calculated by:
 
-$$|| \lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S ||^2$$
+$$\lVert \lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S \rVert^2$$
 
 Where $I_2$ is a $2 \times 2$ identity tensor.
 
@@ -46,7 +46,7 @@ identity tensors and the projector for the qubit we are interested in.
 
 The state after the measurement can be described similarly:
 
-$$\frac{\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S}{||\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S||}$$
+$$\frac{\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S}{\lVert\lvert 0 \rangle \langle 0 \rvert \otimes I_2 \times S\rVert}$$
 
 # Outcomes
 
